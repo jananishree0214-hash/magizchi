@@ -5,16 +5,14 @@ class OperatorsHomeWork
 
    {
 
-          int x = 10;
-          int y = 15;
+          int a = 20;
+          int b = 6;
      
 
-    System.out.println("X==Y:"+(x==y));
-    System.out.println("X !=Y :"+(x !=y));
-    System.out.println("X > Y : "+(x > y));
-    System.out.println("X < Y : "+(x < y));
-    System.out.println("X >=Y:"+(x >= y));
-    System.out.println("X <=Y:"+(x <=y));
+    System.out.println("Addition = "+(a+b));
+    System.out.println("Subraction = "+(a-b));
+    System.out.println("Division = "+(a/b));
+    System.out.println("Remainder = "+(a%b));
     
  
 
