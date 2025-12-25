@@ -1,36 +1,28 @@
 import java.util.Scanner;
 
-class Grade
+class TrafficLight
 {
 
   public static void main(String[] args)																																												
 
  {
   Scanner sc = new Scanner(System.in);
-  char a = sc.next().charAt(0);
+  String a = sc.nextLine();
            
        switch (a) 
 {
-       case 'a':
-    System.out.println(" excellent");
+       case "Red":
+    System.out.println(" stop");
        break;
 
-      case 'b' :
-    System.out.println("good");
+      case "Yellow" :
+    System.out.println("wait");
        break;
 
-      case 'c':
-   System.out.println("bad");
+      case "Green":
+   System.out.println("go");
        break;
 
-      case 'd':
-   System.out.println("good");
-       break;
-
-      case 'e' :
-  System.out.println("bad");
-       break;     
-   
       default:
   System.out.println("Invalid Input");
        

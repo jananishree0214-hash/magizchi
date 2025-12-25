@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Grade
+class Vowels
 {
 
   public static void main(String[] args)																																												
@@ -12,23 +12,23 @@ class Grade
        switch (a) 
 {
        case 'a':
-    System.out.println(" excellent");
-       break;
-
-      case 'b' :
-    System.out.println("good");
-       break;
-
-      case 'c':
-   System.out.println("bad");
-       break;
-
-      case 'd':
-   System.out.println("good");
+    System.out.println(" a is Vowel");
        break;
 
       case 'e' :
-  System.out.println("bad");
+    System.out.println("b is vowel");
+       break;
+
+      case 'i':
+   System.out.println("c is Vowel");
+       break;
+
+      case 'o':
+   System.out.println("d isvowel");
+       break;
+
+      case 'u' :
+  System.out.println("e is Vowel");
        break;     
    
       default:
