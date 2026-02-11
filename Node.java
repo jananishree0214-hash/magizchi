@@ -1,11 +1,16 @@
-class Node 
+package linkedlist;
+
+
+public class Node 
 {
     int data;
     Node next;
+    Node Prev;
+    Node prev;
 
-    Node(int data) 
-	{
-        this.data = data;
-        this.next = null;
-    }
+public Node(int data)
+{
+    this.data = data;
+}
+
 }
