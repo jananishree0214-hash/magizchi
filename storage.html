@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage Demo</title>
+</head>
+<body>
+
+<h2>Local Storage</h2>
+<input type="text" id="name">
+<button onclick="saveName()">Save</button>
+<p id="result"></p>
+
+<h2>Session Storage Counter</h2>
+<button onclick="countClick()">Click</button>
+<p id="counter">0</p>
+
+<h2>Cookie Theme</h2>
+<button onclick="setTheme('light')">Light</button>
+<button onclick="setTheme('dark')">Dark</button>
+
+<script>
+    // Local Storage
+    function saveName() {
+        let name = document.getElementById("name").value;
+        localStorage.setItem("username", name);
+        document.getElementById("result").innerHTML =
+            "Name: " + localStorage.getItem("username");
+    }
+
+    // Session Storage
+    function countClick() {
+        let count = sessionStorage.getItem("count") || 0;
+        count++;
+        sessionStorage.setItem("count", count);
+        document.getElementById("counter").innerHTML = count;
+    }
+
+    // Cookies
+    function setTheme(theme) {
+        document.cookie = "theme=" + theme;
+
+        if(theme === "dark") {
+            document.body.style.background = "black";
+            document.body.style.color = "white";
+        } else {
+            document.body.style.background = "white";
+            document.body.style.color = "black";
+        }
+    }
+</script>
+
+</body>
+</html>
