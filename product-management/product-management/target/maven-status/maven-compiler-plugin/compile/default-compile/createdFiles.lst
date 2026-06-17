@@ -1,0 +1,5 @@
+com\janani\product_management\ProductService.class
+com\janani\product_management\ProductRepository.class
+com\janani\product_management\ProductManagementApplication.class
+com\janani\product_management\ProductController.class
+com\janani\product_management\Product.class
